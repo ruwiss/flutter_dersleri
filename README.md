@@ -1,1 +1,1 @@
-AppBar (üst bar) eklemeyi öğreniyoruz.
+Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
