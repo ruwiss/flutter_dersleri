@@ -1,4 +1,1 @@
-Proje çalıştırma ve temiz proje oluşturma
-Proje ana yapısı hakkında bilgiler
-
-MaterialApp, Scaffold yapısı
+AppBar (üst bar) eklemeyi öğreniyoruz.

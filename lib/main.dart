@@ -11,6 +11,11 @@ class Uygulamam extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Uygulamam'),
+          backgroundColor: Colors.indigo.shade200,
+          centerTitle: true,
+        ),
         body: Text('merhaba'),
       ),
     );
