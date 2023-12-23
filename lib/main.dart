@@ -12,7 +12,6 @@ class Uygulamam extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Nunito"),
       home: Scaffold(
-        backgroundColor: Colors.black87,
         appBar: AppBar(
           title: Text('Uygulamam',
               style:
@@ -20,7 +19,19 @@ class Uygulamam extends StatelessWidget {
           backgroundColor: Colors.indigo.shade200,
           centerTitle: true,
         ),
-        body: Image.asset('assets/images/logo.png'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Merhaba'),
+              Image.asset('assets/images/logo.png', width: 200),
+              Image.network(
+                'https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2021/11/set-background-image-flutter-hero.jpeg?fit=1920%2C1280&ssl=1',
+                width: 300,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
