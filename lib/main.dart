@@ -21,14 +21,11 @@ class Uygulamam extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text('Merhaba'),
+              Text('Deneme'),
               Image.asset('assets/images/logo.png', width: 200),
-              Image.network(
-                'https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2021/11/set-background-image-flutter-hero.jpeg?fit=1920%2C1280&ssl=1',
-                width: 300,
-              ),
             ],
           ),
         ),
