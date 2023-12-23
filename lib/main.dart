@@ -23,9 +23,26 @@ class Uygulamam extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('Merhaba'),
-              Text('Deneme'),
-              Image.asset('assets/images/logo.png', width: 200),
+              ElevatedButton(
+                onPressed: () => print('Bana tıkladın'),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.indigo),
+                child: Text(
+                  'Bana Tıkla',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.amber,
+                  ),
+                ),
+              ),
+              TextButton(onPressed: () {}, child: Text('Tıkla Bana')),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  color: Colors.red,
+                  size: 40,
+                ),
+              )
             ],
           ),
         ),
