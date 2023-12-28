@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Stack Widgetının kullanımını öğrendik
