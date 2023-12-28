@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Sayfa geçişi (Farklı Ekrana Geçiş) nasıl yapılır öğrenmiş olduk.
