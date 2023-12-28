@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Kendi component yapılarımızı nasıl oluşturabileceğimizi öğrendik. Yani görünümlerimizi parçalayıp daha düzenli olmayı öğrendik :)
