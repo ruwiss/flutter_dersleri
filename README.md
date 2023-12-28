@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Container, Card, Padding, Margin, SizedBox, Align widgetlarının kullanımını öğrendik.
