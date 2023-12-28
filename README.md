@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Resim eklemeyi ve Assets yapısını öğrendik.
