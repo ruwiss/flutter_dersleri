@@ -1,1 +1,1 @@
-Projemize istediğimiz yazı fontunu dahil ettik ve kullandık.
+Column / Row widgetlarının kullanımını öğrendik
