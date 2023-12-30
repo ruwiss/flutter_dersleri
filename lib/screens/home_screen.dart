@@ -1,7 +1,24 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    _counter++;
+    setState(() {});
+  }
+
+  void _resetCounter() {
+    _counter = 0;
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +56,7 @@ class HomeScreen extends StatelessWidget {
 
   GestureDetector _resetButton() {
     return GestureDetector(
-      onTap: () => print('Reset'),
+      onTap: _resetCounter,
       child: Container(
         width: 30,
         height: 30,
@@ -52,7 +69,7 @@ class HomeScreen extends StatelessWidget {
 
   GestureDetector _incrementButton() {
     return GestureDetector(
-      onTap: () => print('Tıklandı'),
+      onTap: _incrementCounter,
       child: Container(
         width: 90,
         height: 90,
@@ -64,9 +81,9 @@ class HomeScreen extends StatelessWidget {
   }
 
   Text _counterText() {
-    return const Text(
-      '0',
-      style: TextStyle(
+    return Text(
+      '$_counter',
+      style: const TextStyle(
         fontFamily: 'Digital7',
         fontSize: 50,
         color: Colors.white,
