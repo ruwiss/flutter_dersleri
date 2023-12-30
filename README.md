@@ -1,1 +1,1 @@
-Stack Widgetının kullanımını öğrendik
+Gesture Detector ile kendi butonumuzu oluşturduk.
