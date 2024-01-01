@@ -1,2 +1,11 @@
-Counter (Sayaç) Uygulaması yaptık
-Stateful Widget kavramını öğrenerek ekranımızda güncelleme yapmayı öğrendik
+Verilerimizi nasıl listeleyebiliriz öğrendik.
+
+Listeleme için;
+
+- Map
+- List.generate
+- ListView
+- ListView.builder
+- ListView.seperated
+
+yöntemlerini kullandık.
