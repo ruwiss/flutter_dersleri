@@ -9,6 +9,6 @@ https://collectapi.com/tr/api/weather/hava-durumu-api
 
 
 ## Kullandığımız Paketler (pub.dev)
-https://pub.dev/packages/geolocator
-https://pub.dev/packages/geocoding
-https://pub.dev/packages/dio
+- https://pub.dev/packages/geolocator
+- https://pub.dev/packages/geocoding
+- https://pub.dev/packages/dio
