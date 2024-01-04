@@ -1,16 +1,14 @@
-# havadurumu
+## Hava Durumu Uygulaması
+Konumumuzu alıp güncel 1 haftalık hava durumunu gösterdik.
+API Kullanımını öğrendik.
 
-A new Flutter project.
+API'a istek atmak için Dio Kütüphanesini kullandık. Ancak HTTP kütüphanesini de kullanabilirsiniz.
 
-## Getting Started
+## Kullandığımız hava durumu API
+https://collectapi.com/tr/api/weather/hava-durumu-api
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Kullandığımız Paketler (pub.dev)
+https://pub.dev/packages/geolocator
+https://pub.dev/packages/geocoding
+https://pub.dev/packages/dio
