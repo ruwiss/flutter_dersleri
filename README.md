@@ -1,1 +1,1 @@
-Wrap Widget, kullanımını öğrendik.
+Flexible ve Expanded Widget kullanımını öğrendik.
