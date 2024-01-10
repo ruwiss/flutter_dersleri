@@ -1,1 +1,1 @@
-Visibility ve Opacity Widget kullanımını ve farkını öğrendik.
+RichText ve TextSpan kullanımını öğrendik

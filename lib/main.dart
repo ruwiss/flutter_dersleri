@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Visibility & Opacity'),
+          title: const Text('RichText & TextSpan'),
           titleTextStyle: const TextStyle(
             color: Colors.white,
             fontSize: 20,

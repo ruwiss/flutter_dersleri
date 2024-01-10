@@ -10,44 +10,31 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  bool _value = true;
-
-  void _setValue() {
-    _value = !_value;
-    setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: _setValue,
-        child: Text('OK'),
-      ),
-      body: Column(
-        children: [
-          Visibility(
-            visible: _value,
-            child: Container(
-              height: 200,
-              color: Colors.redAccent,
+      body: Center(
+        child: RichText(
+          text: TextSpan(
+            text: "Flutter Ders ",
+            style: const TextStyle(
+              fontSize: 24,
+              color: Colors.deepOrange,
             ),
-          ),
-          Opacity(
-            opacity: _value ? 1 : 0,
-            child: Expanded(
-              flex: 3,
-              child: Container(
-                height: 200,
-                color: Colors.blue.shade300,
+            children: const [
+              TextSpan(
+                text: "#26",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
+              TextSpan(
+                text: " RichText Kullanımı",
+              ),
+            ],
           ),
-          Container(
-            height: 100,
-            color: Colors.orangeAccent,
-          ),
-        ],
+        ),
       ),
     );
   }
