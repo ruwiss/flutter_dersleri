@@ -1,1 +1,1 @@
-Flexible ve Expanded Widget kullanımını öğrendik.
+Visibility ve Opacity Widget kullanımını ve farkını öğrendik.
