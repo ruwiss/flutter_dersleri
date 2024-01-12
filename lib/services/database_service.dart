@@ -27,17 +27,10 @@ class DatabaseService {
   }
 
   // Görev Güncelle
-  Future<void> updateTodo({
-    required int id,
-    required String text,
-    bool isDone = false,
-  }) async {
-    final existingTodo = await isar.todos.get(id);
+  Future<void> updateTodo(Todo todo) async {
+    final existingTodo = await isar.todos.get(todo.id);
     if (existingTodo != null) {
-      existingTodo
-        ..text = text
-        ..isDone = isDone;
-      await isar.writeTxn(() => isar.todos.put(existingTodo));
+      await isar.writeTxn(() => isar.todos.put(todo));
     }
     await fetchTodos();
   }

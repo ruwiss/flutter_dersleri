@@ -25,8 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _updateTodo(Todo todo) async {
-    await _databaseService.updateTodo(
-        id: todo.id, text: todo.text, isDone: todo.isDone);
+    await _databaseService.updateTodo(todo);
     setState(() {});
   }
 
