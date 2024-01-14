@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:todo_app/models/todo_model.dart';
 
-class DatabaseService {
+class DatabaseService extends ChangeNotifier {
   static late Isar isar;
 
   // Isar başlatılsın
@@ -24,6 +25,7 @@ class DatabaseService {
   // Görevleri Getir
   Future<void> fetchTodos() async {
     currentTodos = await isar.todos.where().findAll();
+    notifyListeners();
   }
 
   // Görev Güncelle

@@ -1,3 +1,3 @@
-## Todo Uygulaması
+## Todo Uygulaması ve Provider
 
-[Isar](https://isar.dev/tutorials/quickstart.html) paketini kullanarak Cihaz üzerine veri kaydı yapmayı bu proje ile detaylıca öğrendik.
+Flutter'da State Yönetimi konusunu [Ders 27](https://github.com/ruwiss/flutter_dersleri/tree/ders-27) ' de beraber yaptığımız Todo uygulamasıyla öğrendik.
