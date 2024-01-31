@@ -1,3 +1,4 @@
-## Todo Uygulaması ve Provider
+## Shared Preferences Kullanımı
 
-Flutter'da State Yönetimi konusunu [Ders 27](https://github.com/ruwiss/flutter_dersleri/tree/ders-27) ' de beraber yaptığımız Todo uygulamasıyla öğrendik.
+Cihaz üzerinde verilerimizi kaydederken kullanabileceğimiz shared_preferences
+paketinin kullanımını basit şekilde öğrendik.

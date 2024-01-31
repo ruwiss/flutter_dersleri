@@ -1,34 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:todo_app/screens/home_screen.dart';
-import 'package:todo_app/services/database_service.dart';
+import 'package:todo_app/screens/login_screen.dart';
 
-void main() async {
-  // Flutter'ı hazırla
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Veritabanını başlat
-  await DatabaseService.initialize();
-
-  // Widgetları Çiz
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => DatabaseService()),
-      ],
-      child: const MyApp(),
-    ),
-  );
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

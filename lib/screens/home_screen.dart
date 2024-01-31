@@ -1,91 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:todo_app/models/todo_model.dart';
-import 'package:todo_app/screens/add_todo_screen.dart';
-import 'package:todo_app/services/database_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  void _fetchTodos() {
-    context.read<DatabaseService>().fetchTodos();
-  }
+  String? eposta;
 
-  void _navigateToAddScreen() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => AddTodoScreen(),
-      ),
-    );
+  String? sifre;
+
+  void _getUserInfoFromDevice() async {
+    final prefs = await SharedPreferences.getInstance();
+    eposta = prefs.getString("eposta");
+    sifre = prefs.getString("sifre");
+    setState(() {});
   }
 
   @override
   void initState() {
-    _fetchTodos();
+    _getUserInfoFromDevice();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Görev Uygulaması"),
-        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20),
-        backgroundColor: Colors.blue.shade700,
-        actions: [
-          IconButton(
-            onPressed: _navigateToAddScreen,
-            icon: const Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
-        ],
-      ),
       body: Center(
-        child: _todoListWidget(),
-      ),
-    );
-  }
-
-  Expanded _todoListWidget() {
-    return Expanded(
-      child: Consumer<DatabaseService>(
-        builder: (context, databaseService, child) => ListView.separated(
-          itemCount: databaseService.currentTodos.length,
-          itemBuilder: (context, index) {
-            final Todo todo = databaseService.currentTodos[index];
-            return ListTile(
-              title: Text(
-                todo.text,
-                style: TextStyle(
-                  decoration: todo.isDone
-                      ? TextDecoration.lineThrough
-                      : TextDecoration.none,
-                ),
-              ),
-              subtitle: Text(todo.datetime.toString()),
-              tileColor: Colors.grey.shade100,
-              trailing: Checkbox(
-                value: todo.isDone,
-                onChanged: (isDone) {
-                  todo.isDone = isDone!;
-                  databaseService.updateTodo(todo);
-                },
-              ),
-            );
-          },
-          separatorBuilder: (context, index) => Divider(
-            height: 0,
-            color: Colors.blueGrey.shade100,
-          ),
-        ),
+        child: Text("$eposta $sifre"),
       ),
     );
   }
